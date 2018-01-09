@@ -1,5 +1,7 @@
 EESchema Schematic File Version 2
 LIBS:power
+LIBS:MAX13432EETD
+LIBS:mounting_hole
 LIBS:device
 LIBS:transistors
 LIBS:conn
@@ -27,15 +29,15 @@ LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:Switch
 LIBS:valves
 LIBS:WIZnet_W5500_MagJack-cache
+LIBS:lm25576mh
 LIBS:BBB-Cape-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -46,31 +48,25 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 1200 2250 0    118  ~ 0
-Index:\n\nPins and Connectors.............................Page 1\nRJ45 and WIZnet W5500.......................Page 2
+Index:\n\nPins and Connectors.............................Page 1\nRJ45 and WIZnet W5500.......................Page 2\nBuck Reg...............................................Page 3\nRS485....................................................Page 4\n\n
 $Sheet
-S 1250 2750 1050 900 
+S 1250 3250 1050 900 
 U 5A08EFA4
 F0 "Page 1" 79
 F1 "Pins and Connectors.sch" 79
 $EndSheet
-$Sheet
-S 1250 3950 1050 900 
-U 5A08EFC1
-F0 "Page 2" 79
-F1 "RJ45 and WIZnet W5500.sch" 79
-$EndSheet
 Text Notes 8000 6950 0    118  ~ 0
 PARADIGM HYPERLOOP
 Text Notes 7350 7550 0    118  ~ 0
-BBB-Cape
+BBB-Socket
 Text Notes 8200 7650 0    61   ~ 0
 Nov. 10/2017
 Text Notes 10600 7650 0    61   ~ 0
 1\n
 Text Notes 7400 7250 0    61   ~ 0
 Index
-Text Notes 10150 7300 0    91   ~ 0
-Mitchell Stride
+Text Notes 9100 7300 0    91   ~ 0
+Mitchell Stride & Mark Belbin\n
 $Bitmap
 Pos 7650 6850
 Scale 1.000000
@@ -630,4 +626,158 @@ BE 9E CA 93 FC 2E E0 77 B3 5A 3C CF 0F 0A 0A 0A 09 09 09 09 09 F1 F7 F7 77 BB DD
 FE 3F E5 A5 16 B9 9D 8E 21 68 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Sheet
+S 1250 5700 1100 850 
+U 5A1AFAA3
+F0 "Page 3" 79
+F1 "Buck Reg.sch" 79
+$EndSheet
+$Sheet
+S 1250 4450 1050 900 
+U 5A08EFC1
+F0 "Page 2" 79
+F1 "RJ45 and WIZnet W5500.sch" 79
+$EndSheet
+$Sheet
+S 3550 3200 1050 950 
+U 5A1AFAE6
+F0 "Page 4" 79
+F1 "RS485.sch" 79
+$EndSheet
+$Comp
+L MOUNTING_HOLE J1
+U 1 1 5A37380D
+P 8550 3050
+F 0 "J1" H 8650 3250 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 8700 2850 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 8550 3050 60  0001 C CNN
+F 3 "" H 8550 3050 60  0001 C CNN
+	1    8550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE J2
+U 1 1 5A3738D0
+P 8550 3550
+F 0 "J2" H 8650 3750 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 8700 3350 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 8550 3550 60  0001 C CNN
+F 3 "" H 8550 3550 60  0001 C CNN
+	1    8550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE J3
+U 1 1 5A37391E
+P 8550 4100
+F 0 "J3" H 8650 4300 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 8700 3900 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 8550 4100 60  0001 C CNN
+F 3 "" H 8550 4100 60  0001 C CNN
+	1    8550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE J4
+U 1 1 5A37394D
+P 8550 4600
+F 0 "J4" H 8650 4800 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 8700 4400 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 8550 4600 60  0001 C CNN
+F 3 "" H 8550 4600 60  0001 C CNN
+	1    8550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE J5
+U 1 1 5A373A79
+P 9600 3050
+F 0 "J5" H 9700 3250 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 9750 2850 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 9600 3050 60  0001 C CNN
+F 3 "" H 9600 3050 60  0001 C CNN
+	1    9600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE J6
+U 1 1 5A373A7F
+P 9600 3550
+F 0 "J6" H 9700 3750 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 9750 3350 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 9600 3550 60  0001 C CNN
+F 3 "" H 9600 3550 60  0001 C CNN
+	1    9600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE J7
+U 1 1 5A373A85
+P 9600 4100
+F 0 "J7" H 9700 4300 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 9750 3900 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 9600 4100 60  0001 C CNN
+F 3 "" H 9600 4100 60  0001 C CNN
+	1    9600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE J8
+U 1 1 5A373A8B
+P 9600 4600
+F 0 "J8" H 9700 4800 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 9750 4400 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 9600 4600 60  0001 C CNN
+F 3 "" H 9600 4600 60  0001 C CNN
+	1    9600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5A373AAB
+P 9250 5300
+F 0 "#PWR01" H 9250 5050 50  0001 C CNN
+F 1 "GND" H 9250 5150 50  0000 C CNN
+F 2 "" H 9250 5300 50  0001 C CNN
+F 3 "" H 9250 5300 50  0001 C CNN
+	1    9250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A373AD5
+P 8150 5300
+F 0 "#PWR02" H 8150 5050 50  0001 C CNN
+F 1 "GND" H 8150 5150 50  0000 C CNN
+F 2 "" H 8150 5300 50  0001 C CNN
+F 3 "" H 8150 5300 50  0001 C CNN
+	1    8150 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3050 9250 3050
+Wire Wire Line
+	9250 3050 9250 5300
+Wire Wire Line
+	9400 3550 9250 3550
+Connection ~ 9250 3550
+Wire Wire Line
+	9400 4100 9250 4100
+Connection ~ 9250 4100
+Wire Wire Line
+	9400 4600 9250 4600
+Connection ~ 9250 4600
+Wire Wire Line
+	8350 3050 8150 3050
+Wire Wire Line
+	8150 3050 8150 5300
+Wire Wire Line
+	8350 4600 8150 4600
+Connection ~ 8150 4600
+Wire Wire Line
+	8350 4100 8150 4100
+Connection ~ 8150 4100
+Wire Wire Line
+	8350 3550 8150 3550
+Connection ~ 8150 3550
 $EndSCHEMATC

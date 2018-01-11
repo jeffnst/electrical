@@ -48,10 +48,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_02x23_Odd_Even P1
+L Conn_02x23_Odd_Even P9
 U 1 1 5A08F22D
 P 2150 1800
-F 0 "P1" H 2200 3000 50  0000 C CNN
+F 0 "P9" H 2200 3000 50  0000 C CNN
 F 1 "02x23_Stackable Header" H 2200 600 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x23_Pitch2.54mm" H 2150 1800 50  0001 C CNN
 F 3 "" H 2150 1800 50  0001 C CNN
@@ -59,10 +59,10 @@ F 3 "" H 2150 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_02x23_Odd_Even P2
+L Conn_02x23_Odd_Even P8
 U 1 1 5A08F9A9
 P 4700 1800
-F 0 "P2" H 4750 3000 50  0000 C CNN
+F 0 "P8" H 4750 3000 50  0000 C CNN
 F 1 "02x23_Stackable Header" H 4750 600 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x23_Pitch2.54mm" H 4700 1800 50  0001 C CNN
 F 3 "" H 4700 1800 50  0001 C CNN
@@ -268,8 +268,6 @@ Text GLabel 6300 1800 0    39   Input ~ 8
 UART0_TXD
 Text GLabel 6300 1700 0    39   Input ~ 8
 UART0_RXD
-Text GLabel 6300 1400 0    39   Input ~ 8
-DGND
 NoConn ~ 6300 1500
 NoConn ~ 6300 1600
 NoConn ~ 6300 1900
@@ -668,4 +666,113 @@ F 3 "" H 11000 5550 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	7300 3150 7300 6500
+$Comp
+L Conn_01x03 J?
+U 1 1 5A56B174
+P 1850 3850
+F 0 "J?" H 1850 4050 50  0000 C CNN
+F 1 "I2C2" H 1850 3650 50  0000 C CNN
+F 2 "" H 1850 3850 50  0001 C CNN
+F 3 "" H 1850 3850 50  0001 C CNN
+	1    1850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J?
+U 1 1 5A56B1D7
+P 1850 5100
+F 0 "J?" H 1850 5200 50  0000 C CNN
+F 1 "5V PWR" H 1850 4900 50  0000 C CNN
+F 2 "" H 1850 5100 50  0001 C CNN
+F 3 "" H 1850 5100 50  0001 C CNN
+	1    1850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x03_Counter_Clockwise J?
+U 1 1 5A56B285
+P 1800 5650
+F 0 "J?" H 1850 5850 50  0000 C CNN
+F 1 "SPI0" H 1850 5450 50  0000 C CNN
+F 2 "" H 1800 5650 50  0001 C CNN
+F 3 "" H 1800 5650 50  0001 C CNN
+	1    1800 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 3750 0    39   Input ~ 8
+I2C2_SCL/SPI1_CS1/UART1_RTSn
+Wire Wire Line
+	1650 3750 1550 3750
+Text GLabel 1550 3850 0    39   Input ~ 8
+I2C2_SDA/SPI1_CS0/UART1_CTSn
+Wire Wire Line
+	1650 3850 1550 3850
+Text GLabel 1550 3950 0    39   Input ~ 8
+DGND
+Wire Wire Line
+	1650 3950 1550 3950
+Text GLabel 1450 5550 0    39   Input ~ 8
+VDD_3V3
+Text GLabel 2250 5550 2    39   Input ~ 8
+DGND
+Text GLabel 1450 5650 0    39   Input ~ 8
+I2C1_SCL/SPI0_CS0
+Text GLabel 1450 5750 0    39   Input ~ 8
+I2C2_SCL/SPI0_DO/UART2_TXD
+Text GLabel 2250 5750 2    39   Input ~ 8
+I2C1_SDA/SPI0_DI
+Text GLabel 2250 5650 2    39   Input ~ 8
+I2C2_SDA/SPIO_SCLK/UART2_RXD
+Wire Wire Line
+	1450 5550 1600 5550
+Wire Wire Line
+	1600 5650 1450 5650
+Wire Wire Line
+	1450 5750 1600 5750
+Wire Wire Line
+	2250 5550 2100 5550
+Wire Wire Line
+	2100 5650 2250 5650
+Wire Wire Line
+	2250 5750 2100 5750
+$Comp
+L Conn_01x05 J?
+U 1 1 5A5706AE
+P 1850 4500
+F 0 "J?" H 1850 4800 50  0000 C CNN
+F 1 "UART5" H 1850 4200 50  0000 C CNN
+F 2 "" H 1850 4500 50  0001 C CNN
+F 3 "" H 1850 4500 50  0001 C CNN
+	1    1850 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 4700 0    39   Input ~ 8
+DGND
+Text GLabel 1500 4300 0    39   Input ~ 8
+UART5_RXD+
+Text GLabel 1500 4400 0    39   Input ~ 8
+UART5_TXD+
+Text GLabel 1500 4500 0    39   Input ~ 8
+UART5_CTSn+
+Text GLabel 1500 4600 0    39   Input ~ 8
+UART5_RTSn
+Wire Wire Line
+	1650 4700 1500 4700
+Wire Wire Line
+	1500 4600 1650 4600
+Wire Wire Line
+	1650 4500 1500 4500
+Wire Wire Line
+	1500 4400 1650 4400
+Wire Wire Line
+	1650 4300 1500 4300
+Wire Wire Line
+	1650 5100 1500 5100
+Text GLabel 1500 5100 0    39   Input ~ 8
+VDD_5V
+Wire Wire Line
+	1650 5200 1500 5200
+Text GLabel 1500 5200 0    39   Input ~ 8
+DGND
+NoConn ~ 6300 1400
 $EndSCHEMATC

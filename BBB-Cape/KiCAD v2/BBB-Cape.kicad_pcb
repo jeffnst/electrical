@@ -5,7 +5,7 @@
     (no_connects 153)
     (area 110.592799 47.458559 165.352801 198.739687)
     (thickness 1.6)
-    (drawings 11)
+    (drawings 12)
     (tracks 0)
     (zones 0)
     (modules 85)
@@ -1343,7 +1343,7 @@
   )
 
   (module Mounting_Holes:MountingHole_3.2mm_M3_Pad (layer F.Cu) (tedit 5A569CB6) (tstamp 5A569C6E)
-    (at 115.2398 63.5381)
+    (at 113.8578 62.1461)
     (descr "Mounting Hole 3.2mm, M3")
     (tags "mounting hole 3.2mm m3")
     (path /5A37380D)
@@ -1364,7 +1364,7 @@
   )
 
   (module Mounting_Holes:MountingHole_3.2mm_M3_Pad (layer F.Cu) (tedit 5A569CAF) (tstamp 5A569C73)
-    (at 161.9758 63.0301)
+    (at 162.2378 62.1461)
     (descr "Mounting Hole 3.2mm, M3")
     (tags "mounting hole 3.2mm m3")
     (path /5A3738D0)
@@ -1385,7 +1385,7 @@
   )
 
   (module Mounting_Holes:MountingHole_3.2mm_M3_Pad (layer F.Cu) (tedit 5A569CA8) (tstamp 5A569C78)
-    (at 157.7848 128.8161)
+    (at 158.9078 128.1561)
     (descr "Mounting Hole 3.2mm, M3")
     (tags "mounting hole 3.2mm m3")
     (path /5A37391E)
@@ -1406,7 +1406,7 @@
   )
 
   (module Mounting_Holes:MountingHole_3.2mm_M3_Pad (layer F.Cu) (tedit 5A569C99) (tstamp 5A569C7D)
-    (at 118.4148 127.5461)
+    (at 117.0078 128.1761)
     (descr "Mounting Hole 3.2mm, M3")
     (tags "mounting hole 3.2mm m3")
     (path /5A37394D)
@@ -1511,7 +1511,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5A569C9B)
-    (at 137.9728 159.619499)
+    (at 119.1078 90.0961)
     (descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x06 2.54mm single row")
     (path /5A08EFA4/5A090D71)
@@ -1802,7 +1802,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_2x23_Pitch2.54mm (layer F.Cu) (tedit 59650533) (tstamp 5A569D02)
-    (at 137.9728 139.05789)
+    (at 112.5678 67.2161)
     (descr "Through hole straight pin header, 2x23, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x23 2.54mm double row")
     (path /5A08EFA4/5A08F22D)
@@ -1907,7 +1907,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_2x23_Pitch2.54mm (layer F.Cu) (tedit 59650533) (tstamp 5A569D34)
-    (at 137.9728 139.400687)
+    (at 160.8278 67.2161)
     (descr "Through hole straight pin header, 2x23, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x23 2.54mm double row")
     (path /5A08EFA4/5A08F9A9)
@@ -3639,6 +3639,11 @@
     )
   )
 
+  (gr_line (start 122.8178 133.8961) (end 153.5678 133.8961) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 110.6678 53.8961) (end 110.6678 121.2061) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 132.1278 47.5361) (end 117.1078 47.5361) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 148.3878 47.5361) (end 159.0078 47.5361) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 165.2778 121.2061) (end 165.2778 53.8861) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 148.3878 67.2161) (end 148.3878 47.5361) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 132.1278 67.2161) (end 148.3838 67.2161) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 132.1278 47.5361) (end 132.1278 67.2211) (layer Edge.Cuts) (width 0.15))
@@ -3646,9 +3651,5 @@
   (gr_arc (start 158.9278 53.8861) (end 165.2778 53.8861) (angle -89.46033829) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 123.3678 121.20626) (end 110.6678 121.20626) (angle -87.47303961) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 152.56764 121.22404) (end 165.2778 121.2215) (angle 85.5529637) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 165.2778 133.89356) (end 165.2778 47.53356) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 110.6678 133.89356) (end 165.2778 133.89356) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 110.6678 47.53356) (end 165.2778 47.53356) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 110.6678 133.89356) (end 110.6678 47.53356) (layer Edge.Cuts) (width 0.15))
 
 )

@@ -693,7 +693,7 @@ L Conn_02x03_Counter_Clockwise J?
 U 1 1 5A56B285
 P 1800 5650
 F 0 "J?" H 1850 5850 50  0000 C CNN
-F 1 "SPI0" H 1850 5450 50  0000 C CNN
+F 1 "SPI1" H 1850 5450 50  0000 C CNN
 F 2 "" H 1800 5650 50  0001 C CNN
 F 3 "" H 1800 5650 50  0001 C CNN
 	1    1800 5650
@@ -715,14 +715,6 @@ Text GLabel 1450 5550 0    39   Input ~ 8
 VDD_3V3
 Text GLabel 2250 5550 2    39   Input ~ 8
 DGND
-Text GLabel 1450 5650 0    39   Input ~ 8
-I2C1_SCL/SPI0_CS0
-Text GLabel 1450 5750 0    39   Input ~ 8
-I2C2_SCL/SPI0_DO/UART2_TXD
-Text GLabel 2250 5750 2    39   Input ~ 8
-I2C1_SDA/SPI0_DI
-Text GLabel 2250 5650 2    39   Input ~ 8
-I2C2_SDA/SPIO_SCLK/UART2_RXD
 Wire Wire Line
 	1450 5550 1600 5550
 Wire Wire Line
@@ -775,4 +767,12 @@ Wire Wire Line
 Text GLabel 1500 5200 0    39   Input ~ 8
 DGND
 NoConn ~ 6300 1400
+Text GLabel 1450 5650 0    39   Input ~ 8
+SPI1_CS0
+Text GLabel 1450 5750 0    39   Input ~ 8
+SPI1_D0
+Text GLabel 2250 5750 2    39   Input ~ 8
+SPI1_DI
+Text GLabel 2250 5650 2    39   Input ~ 8
+SPI1_SCLK
 $EndSCHEMATC

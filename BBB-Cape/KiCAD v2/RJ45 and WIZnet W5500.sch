@@ -724,14 +724,6 @@ F 3 "" H 7450 1100 50  0001 C CNN
 	1    7450 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 8250 2500 2    39   Input ~ 0
-SPI1_DI
-Text GLabel 8250 2400 2    39   Input ~ 0
-SPI1_D0
-Text GLabel 8250 2600 2    39   Input ~ 0
-SPI1_SCLK
-Text GLabel 8250 2700 2    39   Input ~ 0
-SPI1_CS0
 Text Notes 7500 5200 2    39   ~ 0
 Keep Trace Short as possible on \nC10 to stabilize internals\n
 Text GLabel 7450 1700 2    39   Input ~ 0
@@ -863,8 +855,6 @@ Wire Wire Line
 	8050 2400 8250 2400
 Wire Wire Line
 	8050 2500 8250 2500
-Wire Wire Line
-	8050 2600 8250 2600
 Wire Wire Line
 	8050 2700 8250 2700
 Wire Wire Line
@@ -1162,4 +1152,14 @@ Wire Wire Line
 Wire Wire Line
 	8150 2200 8150 2300
 Connection ~ 8150 2300
+Text GLabel 8250 2700 2    39   Input ~ 0
+I2C1_SCL/SPI0_CS0
+Text GLabel 8250 2400 2    39   Input ~ 0
+I2C2_SCL/SPI0_DO/UART2_TXD
+Text GLabel 8250 2500 2    39   Input ~ 0
+I2C1_SDA/SPI0_DI
+Wire Wire Line
+	8050 2600 8250 2600
+Text GLabel 8250 2600 2    39   Input ~ 0
+I2C2_SDA/SPIO_SCLK/UART2_RXD
 $EndSCHEMATC
